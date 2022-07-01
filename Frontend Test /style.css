@@ -1,0 +1,43 @@
+body {
+    background-color: tan;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: maroon;
+    padding: 40px;
+    color: tan;
+}
+
+.page-header {
+    border-style: groove;
+    border-radius: 25px;
+    border-color: tan;
+    box-shadow: 10px 15px tan;
+    padding: 25px;
+}
+
+
+
+/* =============================================================== */
+/* =============================================================== */
+/* styling for blog container to hold user title and inputs */
+
+.blog-container {
+    position: relative;
+    left: 300px;
+    top: 75px;
+    width: 900px;
+    height: fit-content;
+    border-style: solid;
+}
+
+#user-subject {
+    padding: 20px
+}
+
+#user-body {
+    padding: 60px 60px 100px 60px;
+    background-color: white;
+}
