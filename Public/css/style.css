@@ -1,3 +1,7 @@
+/* =============================================================== */
+/* =============================================================== */
+/* styling for main.handlebars nav and body  */
+
 body {
     background-color: tan;
 }
@@ -17,21 +21,20 @@ header {
     box-shadow: 10px 15px tan;
     padding: 25px;
 }
-
-/* Navbar styling */
+/* TODO: Continue working on styling of Nav bar */
 #nav-bar {
     background-color: tan;
 }
- .nav-link {
+
+.nav-link {
     color: maroon;
  }
 
 
 
-
 /* =============================================================== */
 /* =============================================================== */
-/* styling for blog container to hold user title and inputs */
+/* styling for Homepage.handlebars blog container to hold user title and inputs */
 
 .blog-container {
     position: relative;
@@ -53,9 +56,35 @@ header {
 
 
 
+
+
+
 /* =============================================================== */
 /* =============================================================== */
-/* Styling for profile */
+/* Styling for login.handlebars - Login/sign up page */
+
+.form-container {
+    display: flex;
+   justify-content: space-evenly;
+   padding-top: 100px;
+}
+
+.form-group {
+    padding: 5px;
+}
+
+button {
+     position: relative;
+     top: 25px;
+     left: 100px;
+}
+
+
+
+
+/* =============================================================== */
+/* =============================================================== */
+/* Styling for profile.handlebars */
 
 .profile-greeting {
     padding: 25px;
@@ -64,9 +93,11 @@ header {
 }
 
 
+
+
 /* =============================================================== */
 /* =============================================================== */
-/* Styling for new post form fields */
+/* Styling for newpost.handlebars - new post form fields */
 
 .New-post {
     display: flex;

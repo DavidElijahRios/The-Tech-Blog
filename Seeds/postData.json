@@ -1,0 +1,18 @@
+[
+    {
+       "post_title": "What is DOM in JavaScript",
+       "post-description": "The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page. A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an object-oriented representation of the web page, it can be modified with a scripting language such as JavaScript."
+    },
+    {
+        "post_title": "What is sequelize",
+        "post_description": "Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite, and Microsoft SQL Server. Its features are solid transaction support, relations, eager and lazy loading, read replication and many more."
+     },
+     {
+        "post_title": "Who is a Front End Developer?",
+        "post_description": "A front end developer is someone who implements web designs through programming languages like HTML, CSS, and JavaScript. The front end developers work with the design and outlook of the website. Whereas, the back end developers program what goes on behind the scenes like databases. If you head to any site, you can see the work of a front end developer in the navigation, layouts, and also the way a site looks different from your phone. Web design is all about the way a website looks, while front end development is how the design actually gets implemented on the website. The front end developer is the person who is responsible for the implementation."
+     },
+     {
+        "post_title": "What Back End Developers do",
+        "post_description": "Back-end developers are the experts who build and maintain the mechanisms that process data and perform actions on websites. Unlike front-end developers, who control everything you can see on a website, back-end developers are involved in data storage, security, and other server-side functions that you cannot see."
+     }
+]

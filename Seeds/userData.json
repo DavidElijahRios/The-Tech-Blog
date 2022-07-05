@@ -1,0 +1,22 @@
+[
+    {
+       "name": "Sarina Rios",
+       "email": "riossarina25@hotmail.com",
+       "password": "sarina123"
+    },
+    {
+        "name": "Yvonne Manchan",
+        "email": "Yvomanchan321@yahoo.com",
+        "password": "ashdav12"
+     },
+     {
+        "name": "Delson Manchan",
+        "email": "dm201717@outlook.com",
+        "password": "dm201717"
+     },
+     {
+        "name": "Bob Ross",
+        "email": "BobbyR45@gmail.com",
+        "password": "bobbyr25"
+     }
+]
