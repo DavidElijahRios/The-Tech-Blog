@@ -37,12 +37,12 @@ header {
 /* styling for Homepage.handlebars blog container to hold user title and inputs */
 
 .blog-container {
-    position: relative;
-    left: 300px;
-    top: 75px;
     width: 900px;
+    margin: auto;
     height: fit-content;
     border-style: solid;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
 #user-subject {

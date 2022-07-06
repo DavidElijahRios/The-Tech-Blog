@@ -7,6 +7,6 @@ const homeRoutes = require('./homeRoutes.js');
 
 // Creating the routes connection when using the application
 router.use('/', homeRoutes);
-router.use('/api', apiRoutes);
+// router.use('/api', apiRoutes);
 
 module.exports = router;

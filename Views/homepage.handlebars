@@ -1,7 +1,11 @@
+
+{{#each posts}}
 <div class="blog-container">
-
-        <h2 id="user-subject">Title</h2>
-
-        <p id="user-body">Body where seed information will go to show user text</p>
+        
+        <h2 id="user-subject">{{post_title}}</h2>
+          
+        <p id="user-body">{{post_description}}</p>
 
       </div>
+       {{/each}}
+      {{!-- TODO: Need to show posts from other users --}}
