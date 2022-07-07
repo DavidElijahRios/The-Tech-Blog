@@ -1,9 +1,11 @@
 const router = require('express').Router();
 const { Users } = require('../../Models')
 
+// TODO: Ask how this works and also the sessions
 
 
-router.post('/users', async (req, res) => {
+// Route to create a new user
+router.post('/', async (req, res) => {
     try {
 
     const newUser = await Users.create(req.body);
@@ -19,6 +21,20 @@ router.post('/users', async (req, res) => {
        res.status(400).json(err);
    }
 });
+
+// TODO: Need to add middleware to prevent access to route
+// Route to get User info
+router.get('/profile', async (req, res) => {
+    try {
+
+        const userData = await Users.fin
+
+    } catch (err) {
+      
+    }
+})
+
+
 
 router.post('/login', async (req, res) => {
     try {

@@ -2,7 +2,15 @@
     <h2>Welcome, {{name}}!</h2>
   </div>
     
-  {{!-- TODO I also want to show the users posts to allow them to view and edit tor delete them --}}
+{{#each posts}}
+<div class="blog-container">
+        
+        <h2 id="user-subject">{{post_title}}</h2>
+          
+        <p id="user-body">{{post_description}}</p>
+
+      </div>
+       {{/each}}
 
 
   {{!-- TODO: Also need to create new post button at the top or bottom of the page --}}
