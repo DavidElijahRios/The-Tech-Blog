@@ -39,7 +39,7 @@
 
   [Visit Site! (Heroku link)](assets/images/screenshot.png)
 
-  [Blog Screenshot](/Public/Images/the-tech-blog-screenshot.png)
+  [Blog Screenshot](https://github.com/DavidElijahRios/The-Tech-Blog/blob/main/Public/Images/the-tech-blog-screenshot.png)
 
 
 
