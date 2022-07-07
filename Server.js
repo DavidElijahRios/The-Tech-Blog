@@ -4,7 +4,7 @@
 
 const express = require('express');
 const session = require('express-session');
-const routes = require('./controllers');
+const routes = require('./Controllers');
 // Need to bring in handlebars.js
 const exphbs = require('express-handlebars');
 const helpers = require('./Utils/helper.js')
