@@ -11,7 +11,7 @@ const helpers = require('./Utils/helper.js')
 const path = require('path')
 
 
-const sequelize = require('./config/connection');
+const sequelize = require('./Config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 // =======================================================================================
