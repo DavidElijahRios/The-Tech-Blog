@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../../Models')
+const { Users } = require('../../Models')
 
 // TODO: Ask how this works and also the sessions
 
@@ -8,7 +8,7 @@ const { User } = require('../../Models')
 router.post('/', async (req, res) => {
     try {
 
-    const newUser = await User.create(req.body);
+    const newUser = await Users.create(req.body);
 
     req.session.save(() => {
         req.session.user_id = newUser.id;
@@ -27,7 +27,7 @@ router.post('/', async (req, res) => {
 router.get('/profile', async (req, res) => {
     try {
 
-        const userData = await User.fin
+        const userData = await Users.fin
 
     } catch (err) {
       
@@ -38,7 +38,7 @@ router.get('/profile', async (req, res) => {
 
 router.post('/login', async (req, res) => {
     try {
-      const newUser = await User.findOne({ where: { email: req.body.email } });
+      const newUser = await Users.findOne({ where: { email: req.body.email } });
   
       if (!newUser) {
         res
