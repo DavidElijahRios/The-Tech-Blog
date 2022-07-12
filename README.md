@@ -39,7 +39,7 @@
 
   [Visit Site! (Heroku link)](https://rocky-tor-24531.herokuapp.com/)
 
-  ![Blog Screenshot](/Public/Images/the-tech-blog-screenshot.png)
+  ![Blog Screenshot](/public/Images/the-tech-blog-screenshot.png)
 
 
 
