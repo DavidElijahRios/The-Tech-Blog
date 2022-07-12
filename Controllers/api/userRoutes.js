@@ -23,25 +23,25 @@ router.post('/', async (req, res) => {
 });
 
 // get user profile
-router.get('/', async (req, res) => {
-    try {
-        const userData = await Users.findAll({
-          include: [
-            {
-              model: Posts,
-              attributes: ['name']
-            }
-          ]
-        });
-        const users = userData.map((users) => users.get({ plain: true }));
-        res.render('profile', {
-          ...users,
-        })
+// router.get('/', async (req, res) => {
+//     try {
+//         const userData = await Users.findAll({
+//           include: [
+//             {
+//               model: Posts,
+//               attributes: ['name']
+//             }
+//           ]
+//         });
+//         const users = userData.map((users) => users.get({ plain: true }));
+//         res.render('profile', {
+//           ...users,
+//         })
 
-    } catch (err) {
-      res.status(500).json(err);
-    }
-})
+//     } catch (err) {
+//       res.status(500).json(err);
+//     }
+// })
 
 
 

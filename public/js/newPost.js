@@ -17,6 +17,6 @@ const newPost = async () => {
     }
 };
 
-const submitBtn = document.querySelector('#submit-btn');
+const postBtn = document.querySelector('#submit-btn');
 
-submitBtn.addEventListener('click', newPost);
+postBtn.addEventListener('click', newPost);

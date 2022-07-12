@@ -1,6 +1,7 @@
  <div class="profile-greeting">
     <h2>Welcome, {{users.name}}!</h2>
   </div>
+
     
 {{#each posts}}
 <div class="blog-container">
@@ -12,5 +13,9 @@
       </div>
        {{/each}}
 
+       <div class="newPost"> 
+        <button id="newPost">New Post!</button>
+       </div>
 
+<script src="/js/profile.js"></script>
   {{!-- TODO: Also need to create new post button at the top or bottom of the page --}}
