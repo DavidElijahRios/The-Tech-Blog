@@ -37,7 +37,7 @@
 
   1) once in the application you will be able to see a tech blog. 2) you can navigate to login and if it will prompt you to login or if you are not a member you can sign up. 3) you will be able to visit your profile and be able to add a new post see your current posts or delete your own posts. 4) you will be able to comment on said posts as well.
 
-  [Visit Site! (Heroku link)](assets/images/screenshot.png)
+  [Visit Site! (Heroku link)](https://rocky-tor-24531.herokuapp.com/)
 
   ![Blog Screenshot](/Public/Images/the-tech-blog-screenshot.png)
 
