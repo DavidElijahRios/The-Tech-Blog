@@ -31,5 +31,13 @@ router.get('/login', (req,res) => {
     res.render('login')
 })
 
+router.get('/profile', (req, res) => {
+    res.render('profile');
+})
+
+// view for new post
+router.get('/newpost', (req, res) => {
+    res.render('newpost')
+})
 
 module.exports = router;

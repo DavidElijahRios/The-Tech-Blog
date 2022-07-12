@@ -21,16 +21,13 @@ const signUpHandler = async (event) => {
    if (name && email && password) {
       const response = await fetch('api/users', {
             method: 'POST',
-            // TODO: Where is this coming from? the Models?
             body: JSON.stringify({ name, email, password }),
             headers: { 'Content-Type': 'application/json'}
       });
 
       if (response.ok) {
-            // TODO: does this mean to show or render this handlebar?
-            document.location.replace('./profile')
+            document.location.replace('/profile')
       } else {
-            // TODO: what does this do? or mean?
             alert(response.statusText)
       }
    }
@@ -41,4 +38,4 @@ const signUpHandler = async (event) => {
 
 // Giving functionality to submit button
 const submitBtn = document.querySelector('#submitBtn');
-submitBtn.addEventListener('click', )
+submitBtn.addEventListener('click', signUpHandler)

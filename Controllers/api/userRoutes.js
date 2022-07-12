@@ -22,15 +22,24 @@ router.post('/', async (req, res) => {
    }
 });
 
-// TODO: Need to add middleware to prevent access to route
-// Route to get User info
-router.get('/profile', async (req, res) => {
+// get user profile
+router.get('/', async (req, res) => {
     try {
-
-        const userData = await Users.fin
+        const userData = await Users.findAll({
+          include: [
+            {
+              model: Posts,
+              attributes: ['name']
+            }
+          ]
+        });
+        const users = userData.map((users) => users.get({ plain: true }));
+        res.render('profile', {
+          ...users,
+        })
 
     } catch (err) {
-      
+      res.status(500).json(err);
     }
 })
 
@@ -67,6 +76,9 @@ router.post('/login', async (req, res) => {
       res.status(400).json(err);
     }
   });
+
+
+  
 
 
 module.exports = router;
