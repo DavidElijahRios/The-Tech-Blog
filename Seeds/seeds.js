@@ -2,7 +2,7 @@
 const sequelize = require('../Config/connection');
 
 // Bring made models to transfer seeds to database
-const { Users, Posts } = require('../Models');
+const { User, Posts } = require('../Models');
 
 
 // bring in all json data to seed into database when function is ran
@@ -14,7 +14,7 @@ const postData = require('./postData.json');
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
   
-    const users = await Users.bulkCreate(userData, {
+    const users = await User.bulkCreate(userData, {
       individualHooks: true,
       returning: true,
     });

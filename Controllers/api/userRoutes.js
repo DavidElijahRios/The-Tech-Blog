@@ -1,15 +1,16 @@
 const router = require('express').Router();
-const { Users } = require('../../Models')
+const { User } = require('../../Models')
 
 // TODO: Ask how this works and also the sessions
 
 
 // Route to create a new user
 router.post('/', async (req, res) => {
+    console.log(req.body)
     try {
 
-    const newUser = await Users.create(req.body);
-
+    const newUser = await User.create(req.body);
+        console.log(newUser)
     req.session.save(() => {
         req.session.user_id = newUser.id;
         req.session.logged_in = true;
@@ -18,30 +19,11 @@ router.post('/', async (req, res) => {
 
     });
    } catch (err) {
+    console.log("this is err", err.errors[0].message)
        res.status(400).json(err);
+      //  {message: err.errors[0].message}
    }
 });
-
-// get user profile
-// router.get('/', async (req, res) => {
-//     try {
-//         const userData = await Users.findAll({
-//           include: [
-//             {
-//               model: Posts,
-//               attributes: ['name']
-//             }
-//           ]
-//         });
-//         const users = userData.map((users) => users.get({ plain: true }));
-//         res.render('profile', {
-//           ...users,
-//         })
-
-//     } catch (err) {
-//       res.status(500).json(err);
-//     }
-// })
 
 
 
@@ -76,6 +58,16 @@ router.post('/login', async (req, res) => {
       res.status(400).json(err);
     }
   });
+
+  router.delete('/logout', async (req, res) => {
+    if( req.session.logged_in ) {
+        req.session.destroy(() => {
+          res.status(204).json({ message: "Successfully logged out"}).end()
+        }) 
+    } else {
+      res.redirect("/login");
+    }
+  })
 
 
   

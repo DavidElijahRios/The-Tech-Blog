@@ -1,10 +1,10 @@
 // To add a new post to profile
 
 const newPost = async () => {
-    const post_title = document.querySelector('#post-title');
-    const post_description = document.querySelector('#post-body');
+    const post_title = document.querySelector('#post-title').value;
+    const post_description = document.querySelector('#post-body').value;
 
-    const newPostData = await fetch('api/profile/', {
+    const newPostData = await fetch('/api/profile/', {
         method: 'POST',
         body: JSON.stringify({ post_title, post_description }),
         headers: { 'Content-Type': 'application/json' },

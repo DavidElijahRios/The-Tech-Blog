@@ -19,7 +19,7 @@ const signUpHandler = async (event) => {
    const password = document.querySelector('#password-signup').value.trim();
 
    if (name && email && password) {
-      const response = await fetch('api/users', {
+      const response = await fetch('/api/users', {
             method: 'POST',
             body: JSON.stringify({ name, email, password }),
             headers: { 'Content-Type': 'application/json'}
@@ -28,12 +28,19 @@ const signUpHandler = async (event) => {
       if (response.ok) {
             document.location.replace('/profile')
       } else {
-            alert(response.statusText)
+            console.log(response)
+            let answer = await response.json();
+            console.log(answer)
+            alert(answer.errors[0].message)
       }
    }
 }
 
 
+// Logout function
+const logout = async (event) => {
+      // call API logout
+}
 
 
 // Giving functionality to submit button

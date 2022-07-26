@@ -1,14 +1,14 @@
  <div class="profile-greeting">
-    <h2>Welcome, {{users.name}}!</h2>
+    <h2>Welcome, {{user.name}}!</h2>
   </div>
 
     
-{{#each posts}}
+{{#each user.Posts}}
 <div class="blog-container">
         
-        <h2 id="user-subject"></h2>
+        <h2 id="user-subject">{{post_title}}</h2>
           
-        <p id="user-body"></p>
+        <p id="user-body">{{post_description}}</p>
 
       </div>
        {{/each}}
